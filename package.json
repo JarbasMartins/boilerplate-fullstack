@@ -1,0 +1,16 @@
+{
+    "name": "auth",
+    "private": true,
+    "workspaces": [
+        "apps/web",
+        "apps/api"
+    ],
+    "scripts": {
+        "dev": "npm run dev -ws",
+        "build": "npm run build -ws",
+        "lint": "npm run lint -ws"
+    },
+    "devDependencies": {
+        "typescript": "^5.9.3"
+    }
+}

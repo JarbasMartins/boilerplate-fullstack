@@ -1,0 +1,24 @@
+# dependências
+node_modules/
+.pnpm-store/
+.yarn/
+.yarn-cache/
+
+# builds
+dist/
+build/
+.out/
+.next/
+.vite/
+
+# env
+.env
+.env.*
+
+# logs
+*.log
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
