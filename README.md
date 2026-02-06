@@ -83,9 +83,3 @@ Cada item do roadmap está intencionalmente separado da implementação base —
 - Este repositório é uma base técnica — não é um produto acabado. Serve para acelerar decisões iniciais e reduzir trabalho repetitivo.
 - A autenticação fornecida é um padrão inicial baseado em `JWT`; trate-a como infraestrutura que pode (e deve) evoluir conforme requisitos de segurança e produto.
 - Decisões futuras (refresh tokens, OAuth, gestão de secrets, observabilidade, CI/CD) devem respeitar a separação arquitetural aqui estabelecida.
-
-Se desejar, posso:
-
-- gerar um checklist de implementação para cada item do roadmap;
-- adicionar exemplos de scripts de desenvolvimento e execução;
-- ou preparar templates de PR e regras de contribuição.
