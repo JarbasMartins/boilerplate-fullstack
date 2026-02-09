@@ -1,12 +1,15 @@
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-
 import Layout from '../components/Layout';
 import Input from '../components/Input';
 import Button from '../../shared/components/Button';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { loginSchema, type LOGIN_TYPE } from '../schemas/auth.schemas';
+import { http } from '../services/http';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
+    const navigate = useNavigate();
+
     const {
         register,
         handleSubmit,
@@ -16,8 +19,14 @@ export default function Login() {
         mode: 'onBlur',
     });
 
-    function onSubmit(data: LOGIN_TYPE) {
-        console.log('login payload', data);
+    async function onSubmit(data: LOGIN_TYPE) {
+        try {
+            const user = await http.post('users/login', data);
+            navigate('/');
+            return user;
+        } catch (error) {
+            console.error(error);
+        }
     }
 
     return (

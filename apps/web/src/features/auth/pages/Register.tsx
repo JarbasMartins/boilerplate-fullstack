@@ -21,7 +21,7 @@ export default function Register() {
     async function onSubmit(data: REGISTER_TYPE) {
         try {
             const user = await http.post('users/register', data);
-            navigate('/');
+            navigate('/login');
             return user;
         } catch (error) {
             console.error(error);
