@@ -1,4 +1,4 @@
-# Monorepo Starter — Base técnica para novos projetos web
+# Monorepo Starter — Base técnica para novos projetos WEB
 
 Este repositório é um starter (boilerplate) monorepo destinado a servir como base técnica para iniciar projetos web reais. O objetivo é fornecer, desde o primeiro commit, uma arquitetura escalável, separação clara de responsabilidades e um padrão de autenticação funcional — tratado como infraestrutura resolvida, não como objetivo do produto.
 
